@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb:replication://address=(type=master)(host=192.168.5.217)(port=3306),address=(type=slave)(host=192.168.5.206)(port=3306),address=(type=slave)(host=192.168.5.205)(port=3306)/icrown1?autoReconnect=true&validConnectionTimeout=20&connectTimeout=25&useServerPrepStmts=true
-    username: root
-    password: 1qaz@WSX
+    url: jdbc:mariadb://3.0.124.92:3306/icrown
+    username: 'idblink'
+    password: 'HbhLvxPsh71jFmYsUjC2'
 
   jackson:
     time-zone: Asia/Taipei
@@ -13,12 +13,12 @@ spring:
     database: 0
     cluster:
       nodes:
-        - 192.168.5.249:7001
-        - 192.168.5.249:7002
-        - 192.168.5.249:7003
-        - 192.168.5.249:7004
-        - 192.168.5.249:7005
-        - 192.168.5.249:7006
+        - 3.0.124.92:7001
+        - 3.0.124.92:7002
+        - 3.0.124.92:7003
+        - 3.0.124.92:7004
+        - 3.0.124.92:7005
+        - 3.0.124.92:7006
       max-redirects: 3 # 获取失败 最大重定向次数
     lettuce:
       pool:

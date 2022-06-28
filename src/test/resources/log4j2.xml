@@ -37,7 +37,7 @@
         <!-- input log to Kafka -->
         <Kafka name="KAFKA" topic="test" syncSend="false">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS}:%4p %t (%F:%L) - %m%n" />
-            <Property name="bootstrap.servers">192.168.5.249:9092</Property>
+            <Property name="bootstrap.servers">3.0.124.92:9092</Property>
             <Property name="request.timeout.ms">3000</Property>
             <Property name="linger.ms">1000</Property>
         </Kafka>
